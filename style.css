@@ -19,7 +19,7 @@ body {
     padding: 20px;
 }
 
-/* Header */
+
 header {
     text-align: center;
     margin-bottom: 40px;
@@ -32,7 +32,7 @@ header h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Main Content */
+
 main {
     display: grid;
     gap: 30px;
@@ -49,7 +49,7 @@ main {
     }
 }
 
-/* Sections */
+
 section {
     background: white;
     border-radius: 15px;
@@ -66,7 +66,7 @@ section h2 {
     padding-bottom: 10px;
 }
 
-/* Form Styles */
+
 .contact-form {
     display: grid;
     gap: 20px;
@@ -107,7 +107,7 @@ section h2 {
     min-height: 80px;
 }
 
-/* Button Styles */
+
 .btn {
     padding: 12px 24px;
     border: none;
@@ -176,4 +176,71 @@ section h2 {
     display: flex;
     gap: 15px;
     margin-top: 10px;
+}
+
+
+.search-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+
+.contacts-list {
+    display: grid;
+    gap: 20px;
+}
+
+.contact-card {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.contact-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
 }
